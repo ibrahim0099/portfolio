@@ -4,5 +4,4 @@ dist
 .env.local
 .env.*.local
 # personal assets (supplied per-deployment)
-public/ibrahim.jpg
 public/*.pdf

@@ -36,7 +36,7 @@ cp .env.example .env.local
 | `VITE_CV_URL` | URL of your CV PDF (the CV button is hidden if empty) |
 | `VITE_PHOTO_URL` | URL of your photo (falls back to `public/avatar.svg`) |
 
-For `VITE_CV_URL` and `VITE_PHOTO_URL` you can use a hosted URL, or drop files in `public/` and use `/your-file.pdf`. Note that `public/*.pdf` and `public/ibrahim.jpg` are git-ignored.
+For `VITE_CV_URL` and `VITE_PHOTO_URL` you can use a hosted URL, or drop files in `public/` and use `/your-file.pdf`. Note that `public/*.pdf` is git-ignored; `public/ibrahim.jpg` is the author's photo, so delete or replace it in your fork.
 
 On **Vercel / Netlify**, add the same keys under *Project → Environment Variables*, then redeploy.
 
