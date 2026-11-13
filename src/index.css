@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@theme {
+  --font-sans: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-ink: #05060d;
+  --color-panel: #0c0e1c;
+  --color-neon: #5eead4;
+  --color-violet: #a78bfa;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--color-ink); color: #e5e7f5; font-family: var(--font-sans); overflow-x: hidden; }
+.glass { background: rgba(14,17,36,.6); backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,.08); }
+.grad-text { background: linear-gradient(90deg,#5eead4,#a78bfa,#f0abfc); -webkit-background-clip: text; background-clip: text; color: transparent; }
+::selection { background: #a78bfa55; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes floaty { 50% { transform: translateY(-10px); } }
